@@ -11,8 +11,8 @@ export class TheTableComponent implements OnInit {
 
   public data;
     public filterQuery = "";
-    public rowsOnPage = 10;
-    public sortBy = "email";
+    public rowsOnPage = 6;
+    public sortBy = "id";
     public sortOrder = "asc";
 
     constructor(private http: Http) {
