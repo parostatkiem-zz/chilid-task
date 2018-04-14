@@ -58,17 +58,6 @@ table
 
   table tfoot tr{background-color:transparent;}
 
-tr.pagination
-{
-
-}
-
-  mfpaginator li {list-style: none; background:red;}
-  tr.pagination ul li
-  {
-    display: inline;
-  }
-
 @media only screen and (max-width: 640px)
 {
   .main-container

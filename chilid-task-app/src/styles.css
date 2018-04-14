@@ -21,15 +21,17 @@ app-root
 mfpaginator ul
 {
   list-style: none;
-  color: #FFFFFF;
+  color: rgb(86,112,154);
   letter-spacing: 1.25px;
   font-weight: bold;
   margin:0;
   padding:0;
 }
   mfpaginator ul li {display:inline;}
-    mfpaginator ul li.active {color: rgb(86,112,154);}
+    mfpaginator ul li.active {color:white;}
     mfpaginator ul li:not(:first-child) {margin-left:10px;}
+    mfpaginator ul li:first-child, mfpaginator ul li:last-child {color:white;}
+
 
   /*dirty but needed to avoid editing module's template */
   mfpaginator .page-item:first-child>a:after {content:" back ";}
