@@ -5,6 +5,7 @@
   margin: 0 auto;
   font-size:16px;
   margin-top: 40px;
+  display: block;
 }
 .table-contents
 {
@@ -72,6 +73,6 @@ tr.pagination
 {
   .main-container
   {
-    font-size:0.7em;
+    font-size:2.5vw;
   }
 }

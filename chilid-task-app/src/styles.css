@@ -1,6 +1,7 @@
 body
 {
   height: 100vh;
+  min-height: 600px;
   background:radial-gradient(circle,rgb(180,215,255) 1%,rgb(50,130,255)40%);
   padding: 0px;
   margin: 0px;
