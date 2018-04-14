@@ -11,7 +11,7 @@ export class TheTableComponent implements OnInit {
 
   public data;
     public filterQuery = "";
-    public rowsOnPage = 6;
+    public rowsOnPage = 5;
     public sortBy = "id";
     public sortOrder = "asc";
 
