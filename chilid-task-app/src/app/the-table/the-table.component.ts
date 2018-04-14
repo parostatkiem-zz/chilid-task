@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Http} from '@angular/http';
+import * as moment from 'moment';
 
 
 @Component({
@@ -9,7 +10,7 @@ import {Http} from '@angular/http';
 })
 export class TheTableComponent implements OnInit {
 
-  public data;
+    public data: any[];
     public filterQuery = "";
     public rowsOnPage = 5;
     public sortBy = "id";
@@ -32,8 +33,10 @@ export class TheTableComponent implements OnInit {
         return +num;
     }
 
-    public sortByWordLength = (a: any) => {
-        return a.city.length;
-    }
+    public sortByDate = (a: any) =>
+     {
+       let m= moment(a.dateOfBirth, "D.M.YYYY H:m");
+        return m.toDate();
+     }
 
 }
