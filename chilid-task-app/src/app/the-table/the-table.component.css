@@ -67,3 +67,11 @@ tr.pagination
   {
     display: inline;
   }
+
+@media only screen and (max-width: 640px)
+{
+  .main-container
+  {
+    font-size:0.7em;
+  }
+}

@@ -1,0 +1,15 @@
+.container
+{
+  font-size:7px;
+  color:#3A5071;
+  display: inline-block;
+}
+
+
+i
+{
+  display: block;
+  line-height: 1;
+  color:rgb(144,159,182);
+}
+ i.active {color:#3A5071; }

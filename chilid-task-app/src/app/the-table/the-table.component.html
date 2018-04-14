@@ -8,21 +8,27 @@
                   <tr>
                       <th style="width: 8%">
                         <mfDefaultSorter by="id">iD</mfDefaultSorter>
+                        <sorting-arrows desiredElement="id" [currentElement]="sortBy" [currentDir]="sortOrder"></sorting-arrows>
                       </th>
                       <th style="width: 18%">
                           <mfDefaultSorter by="firstName">First Name</mfDefaultSorter>
+                          <sorting-arrows desiredElement="firstName" [currentElement]="sortBy" [currentDir]="sortOrder"></sorting-arrows>
                       </th>
                       <th style="width: 18%">
                           <mfDefaultSorter by="lastName">Last Name</mfDefaultSorter>
+                          <sorting-arrows desiredElement="lastName" [currentElement]="sortBy" [currentDir]="sortOrder"></sorting-arrows>
                       </th>
                       <th style="width: 30%">
                           <mfDefaultSorter by="dateOfBirth">Birth date</mfDefaultSorter>
+                          <sorting-arrows desiredElement="dateOfBirth" [currentElement]="sortBy" [currentDir]="sortOrder"></sorting-arrows>
                       </th>
                       <th style="width: 13%">
                           <mfDefaultSorter by="company">Company</mfDefaultSorter>
+                          <sorting-arrows desiredElement="company" [currentElement]="sortBy" [currentDir]="sortOrder"></sorting-arrows>
                       </th>
                       <th style="width: 13%">
                           <mfDefaultSorter by="note">Note</mfDefaultSorter>
+                          <sorting-arrows desiredElement="note" [currentElement]="sortBy" [currentDir]="sortOrder"></sorting-arrows>
                       </th>
                   </tr>
                 </thead>

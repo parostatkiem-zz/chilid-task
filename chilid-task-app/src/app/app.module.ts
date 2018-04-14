@@ -6,6 +6,7 @@ import { TheTableComponent } from './the-table/the-table.component';
 import { HttpModule } from '@angular/http';
 import { ChilidHeaderComponent } from './chilid-header/chilid-header.component';
 import { ChilidLogoComponent } from './chilid-logo/chilid-logo.component';
+import { SortingArrowsComponent } from './sorting-arrows/sorting-arrows.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ChilidLogoComponent } from './chilid-logo/chilid-logo.component';
     AppComponent,
     TheTableComponent,
     ChilidHeaderComponent,
-    ChilidLogoComponent
+    ChilidLogoComponent,
+    SortingArrowsComponent
   ],
   imports: [
     BrowserModule,
