@@ -1,10 +1,36 @@
 body
 {
   height: 100vh;
-  background: radial-gradient(circle,white,rgb(50,130,255) 45%);
+  background:radial-gradient(circle,rgb(180,215,255) 1%,rgb(50,130,255)40%);
   padding: 0px;
   margin: 0px;
 
   font-family: 'Open Sans', sans-serif;
   @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+  align-items: center;
+  display: flex;
 }
+app-root
+{
+   vertical-align: middle;
+   width:100%;
+}
+
+
+/*table pagination styles*/
+mfpaginator ul
+{
+  list-style: none;
+  color: #FFFFFF;
+  letter-spacing: 0.75px;
+  font-weight: bold;
+  margin:0;
+  padding:0;
+}
+  mfpaginator ul li {display:inline;}
+    mfpaginator ul li.active {color: rgb(86,112,154);}
+    mfpaginator ul li:not(:first-child) {margin-left:10px;}
+
+  /*dirty but needed to avoid editing module's template */
+  mfpaginator .page-item:first-child>a:after {content:" back ";}
+  mfpaginator .page-item:last-child>a:before {content:" next ";}

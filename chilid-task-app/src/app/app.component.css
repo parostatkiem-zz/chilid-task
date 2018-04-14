@@ -1,0 +1,8 @@
+.logo-bottom
+{
+  display: block;
+  height:22px;
+  color:white;
+  filter: brightness(10) grayscale(1);
+
+}

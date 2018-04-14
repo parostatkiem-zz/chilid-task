@@ -4,12 +4,16 @@ import {DataTableModule} from "angular2-datatable";
 import { AppComponent } from './app.component';
 import { TheTableComponent } from './the-table/the-table.component';
 import { HttpModule } from '@angular/http';
+import { ChilidHeaderComponent } from './chilid-header/chilid-header.component';
+import { ChilidLogoComponent } from './chilid-logo/chilid-logo.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TheTableComponent
+    TheTableComponent,
+    ChilidHeaderComponent,
+    ChilidLogoComponent
   ],
   imports: [
     BrowserModule,

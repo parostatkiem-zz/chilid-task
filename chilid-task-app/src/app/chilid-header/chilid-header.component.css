@@ -1,0 +1,20 @@
+.main-container
+{
+  width:90%;
+  max-width:300px;
+  margin: 0 auto;
+
+  text-align: center;
+  display: block;
+
+}
+
+.title
+{
+    font-weight: bold;
+    font-size: 32px;
+    color: #FFFFFF;
+    letter-spacing: -0.89px;
+    margin: 0px;
+    line-height: 1;
+}

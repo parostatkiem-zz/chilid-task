@@ -10,7 +10,8 @@
       "assets": [
         "assets",
         "favicon.ico",
-         { "glob": "dane.json", "input": "./", "output": "./assets/" }
+         { "glob": "dane.json", "input": "./", "output": "./assets/" },
+         { "glob": "/icons", "input": "./", "output": "./assets/" }
       ],
       "index": "index.html",
       "main": "main.ts",

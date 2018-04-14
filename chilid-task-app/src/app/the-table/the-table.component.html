@@ -1,55 +1,48 @@
-the-table.component.html
 <div class="main-container">
-
-  <div class="page-header">
-
-  </div>
-
-
-
   <div class="panel panel-default">
       <table class="table table-striped" [mfData]="data" #mf="mfDataTable"
              [mfRowsOnPage]="rowsOnPage" [(mfSortBy)]="sortBy" [(mfSortOrder)]="sortOrder"
              cellpadding="0" cellspacing="0">
-          <thead>
-          <tr>
-              <th style="width: 10%">
-                <mfDefaultSorter by="id">iD</mfDefaultSorter>
-              </th>
-              <th style="width: 18%">
-                  <mfDefaultSorter by="firstName">First Name</mfDefaultSorter>
-              </th>
-              <th style="width: 18%">
-                  <mfDefaultSorter by="lastName">Last Name</mfDefaultSorter>
-              </th>
-              <th style="width: 30%">
-                  <mfDefaultSorter by="dateOfBirth">Birth date</mfDefaultSorter>
-              </th>
-              <th style="width: 12%">
-                  <mfDefaultSorter by="company">Company</mfDefaultSorter>
-              </th>
-              <th style="width: 12%">
-                  <mfDefaultSorter by="note">Note</mfDefaultSorter>
-              </th>
-          </tr>
-
-          </thead>
-          <tbody>
-          <tr *ngFor="let item of mf.data">
-              <td>{{item.id}}</td>
-              <td>{{item.firstName}}</td>
-              <td>{{item.lastName}}</td>
-              <td>{{item.dateOfBirth}}</td>
-              <td>{{item.company}}</td>
-              <td>{{item.note}}</td>
-          </tr>
-          </tbody>
+            <div class="table-contents">
+                <thead>
+                  <tr>
+                      <th style="width: 8%">
+                        <mfDefaultSorter by="id">iD</mfDefaultSorter>
+                      </th>
+                      <th style="width: 18%">
+                          <mfDefaultSorter by="firstName">First Name</mfDefaultSorter>
+                      </th>
+                      <th style="width: 18%">
+                          <mfDefaultSorter by="lastName">Last Name</mfDefaultSorter>
+                      </th>
+                      <th style="width: 30%">
+                          <mfDefaultSorter by="dateOfBirth">Birth date</mfDefaultSorter>
+                      </th>
+                      <th style="width: 13%">
+                          <mfDefaultSorter by="company">Company</mfDefaultSorter>
+                      </th>
+                      <th style="width: 13%">
+                          <mfDefaultSorter by="note">Note</mfDefaultSorter>
+                      </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of mf.data">
+                      <td>{{item.id}}</td>
+                      <td>{{item.firstName}}</td>
+                      <td>{{item.lastName}}</td>
+                      <td>{{item.dateOfBirth}}</td>
+                      <td>{{item.company}}</td>
+                      <td>{{item.note}}</td>
+                  </tr>
+                </tbody>
+            </div>
           <tfoot>
-          <tr>
-              <td colspan="5">
-                  <mfBootstrapPaginator></mfBootstrapPaginator>
-              </td>
-          </tr>
+            <tr class="pagination-area">
+                <td colspan="6">
+                    <mfBootstrapPaginator></mfBootstrapPaginator>
+                </td>
+            </tr>
           </tfoot>
       </table>
   </div>
