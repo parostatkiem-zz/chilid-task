@@ -44,6 +44,12 @@ table
     line-height: 19px;
     background-color: #E5EEFB;
   }
+    th.column_id{width: 8%;}
+    th.column_firstName{width: 18%;}
+    th.column_lastName{width: 18%;}
+    th.column_dateOfBirth{width: 30%;}
+    th.column_company{width: 13%;}
+    th.column_note{width: 13%;}
 
   table tbody tr
   {

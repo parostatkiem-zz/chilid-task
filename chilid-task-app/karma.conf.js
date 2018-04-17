@@ -19,6 +19,14 @@ module.exports = function (config) {
       reports: [ 'html', 'lcovonly' ],
       fixWebpackSourcePaths: true
     },
+    files:
+    [
+      {pattern: 'src/assets/*.json', watched: true, served: true, included: false},
+      {pattern: 'src/assets/icons/*.svg', watched: true, served: true, included: false}
+    ],
+    proxies: {
+      'assets/': 'src/assets/'
+    },
     angularCli: {
       environment: 'dev'
     },

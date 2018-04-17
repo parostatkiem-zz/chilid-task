@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Http} from '@angular/http';
+import { Http } from '@angular/http';
 import * as moment from 'moment';
 
 
@@ -23,20 +23,15 @@ export class TheTableComponent implements OnInit {
         this.http.get("assets/dane.json")
             .subscribe((data)=> {
                 setTimeout(()=> {
-                  //  this.data = data.json();
                   this.data = data.json();
                 }, 1000);
             });
     }
 
-    public toInt(num: string) {
-        return +num;
-    }
-
-    public sortByDate = (a: any) =>
+    public sortByDate = (item: any) =>
      {
-       let m= moment(a.dateOfBirth, "D.M.YYYY H:m");
-        return m.toDate();
+       let actualDate = moment(item.dateOfBirth, "D.M.YYYY H:m");
+        return actualDate.toDate();
      }
 
 }

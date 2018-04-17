@@ -2,7 +2,7 @@ import { NgModule }      from '@angular/core';
 import { CommonModule }      from '@angular/common';
 import { FormsModule } from "@angular/forms";
 import { DataTableModule } from "angular2-datatable";
-import {HttpModule} from '@angular/http';
+import { HttpModule } from '@angular/http';
 
 import { TheTableComponent }   from './the-table.component';
 
@@ -12,9 +12,10 @@ import { TheTableComponent }   from './the-table.component';
     DataTableModule,
     FormsModule,
     HttpModule
+
   ],
   providers: [],
-  declarations: [ TheTableComponent ],
+  declarations: [ TheTableComponent],
   exports: [TheTableComponent]
 })
 

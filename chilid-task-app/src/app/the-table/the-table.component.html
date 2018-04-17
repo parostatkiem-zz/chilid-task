@@ -6,27 +6,27 @@
             <div class="table-contents">
                 <thead>
                   <tr>
-                      <th style="width: 8%">
+                      <th class="column_id">
                         <mfDefaultSorter by="id">iD</mfDefaultSorter>
                         <sorting-arrows desiredElement="id" [currentElement]="sortBy" [currentDir]="sortOrder"></sorting-arrows>
                       </th>
-                      <th style="width: 18%">
+                      <th  class="column_firstName" >
                           <mfDefaultSorter by="firstName">First Name</mfDefaultSorter>
                           <sorting-arrows desiredElement="firstName" [currentElement]="sortBy" [currentDir]="sortOrder"></sorting-arrows>
                       </th>
-                      <th style="width: 18%">
+                      <th  class="column_lastName" >
                           <mfDefaultSorter by="lastName">Last Name</mfDefaultSorter>
                           <sorting-arrows desiredElement="lastName" [currentElement]="sortBy" [currentDir]="sortOrder"></sorting-arrows>
                       </th>
-                      <th style="width: 30%">
+                      <th  class="column_dateOfBirth">
                           <mfDefaultSorter [by]="sortByDate">Birth date</mfDefaultSorter>
                           <sorting-arrows desiredElement="dateOfBirth" [currentElement]="sortBy" [currentDir]="sortOrder"></sorting-arrows>
                       </th>
-                      <th style="width: 13%">
+                      <th  class="column_company">
                           <mfDefaultSorter by="company">Company</mfDefaultSorter>
                           <sorting-arrows desiredElement="company" [currentElement]="sortBy" [currentDir]="sortOrder"></sorting-arrows>
                       </th>
-                      <th style="width: 13%">
+                      <th  class="column_note">
                           <mfDefaultSorter by="note">Note</mfDefaultSorter>
                           <sorting-arrows desiredElement="note" [currentElement]="sortBy" [currentDir]="sortOrder"></sorting-arrows>
                       </th>

@@ -13,7 +13,6 @@ export class SortingArrowsComponent implements OnInit {
   {
     if(this.currentElement==this.desiredElement)
     {
-
       if(this.currentDir=="desc")
         return "up";
       else
