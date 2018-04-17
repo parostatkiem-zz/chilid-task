@@ -13,8 +13,8 @@
   <p>
     To run this project you need to have <strong>Node.js</strong> and <strong>NPM</strong> instaled.
     Open a console window in "chilid-task-app" directory and type
-    <code>npm install</code>
-    ... wait until process is completed and type
-    <code>ng serve -o</code>
+    <span><code>npm install</code></span>
+    ... wait until process is completed and type<br>
+    <span><code>ng serve -o</code></span>
   </p>
 </section>
